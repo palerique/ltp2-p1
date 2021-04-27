@@ -26,17 +26,17 @@ public class Fatorial {
             throw new Exception("Não é possível calcular factorial de número negativo");
         }
 
-        double sum = 0;
+        double soma = 0;
         int fact = 1;
         for (int i = 1; i <= n; i++) {
             fact *= i;
             // Ao inves de calcular o fatorial e depois a soma
             // resolvi fazer tudo no mesmo loop
             // para otimizar o algoritmo!
-            sum += 1.0 / fact;
+            soma += 1.0 / fact;
         }
 
-        return sum;
+        return soma;
     }
 
     public static void main(String[] args) throws Exception {
